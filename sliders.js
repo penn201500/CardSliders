@@ -86,13 +86,16 @@ const sliders = [
 ];
 
 const slider = document.querySelector(".slider");
+let card_type = "d"; // diamond
 
 sliders.forEach((slide) => {
   const slideItem = document.createElement("div");
   slideItem.classList.add("slide");
   slideItem.dataset.id = slide.id;
   slideItem.innerHTML = `
-    <img src="${slide.image}" alt="${slide.title}" />
+    <img src="images/${cardValueToNum(slide.id)}-${card_type}.png" alt="${
+    slide.title
+  }" class="slide-image"/>
     <div class="slide-content">
       <h2>${slide.title}</h2>
       <p>${slide.description}</p>
@@ -100,3 +103,24 @@ sliders.forEach((slide) => {
   `;
   slider.appendChild(slideItem);
 });
+
+// TODO: Add 4 card types: diamond, heart, club, spade
+function cardValueToNum(v) {
+  const values = [
+    "a",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "j",
+    "q",
+    "k",
+  ];
+  const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+  return isNaN(v) ? nums[values.indexOf(v)] : parseInt(v);
+}

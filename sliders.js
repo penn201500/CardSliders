@@ -18,12 +18,6 @@ const sliders = [
     image: "https://via.placeholder.com/600x400",
   },
   {
-    id: 3,
-    title: "Slider 3",
-    description: "This is the third slider",
-    image: "https://via.placeholder.com/600x400",
-  },
-  {
     id: 4,
     title: "Slider 4",
     description: "This is the fourth slider",

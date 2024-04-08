@@ -37,6 +37,14 @@ html {
     display: none;
 }
 
+.slide:nth-child(even) {
+    transform: scale(1.1) translateY(-5%);
+}
+
+.slide:nth-child(odd) {
+    transform: scale(1.1) translateY(5%);
+}
+
 .slide {
     width: 20vw;
     aspect-ratio: 2/3;

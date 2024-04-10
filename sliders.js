@@ -91,8 +91,8 @@ sliders.forEach((slide) => {
     slide.title
   }" class="slide-image"/>
     <div class="slide-content">
-      <h2>${slide.title}</h2>
-      <p>${slide.description}</p>
+      <h2 class="slide-title">${slide.title}</h2>
+      <p class="slide-description">${slide.description}</p>
     </div>
   `;
   slider.appendChild(slideItem);

@@ -71,7 +71,7 @@ html {
     justify-content: center;
     align-items: center;
     border-radius: 2rem;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     cursor: pointer;
     position: relative;
     top: 0;

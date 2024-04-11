@@ -109,10 +109,63 @@ html {
         width: 0;
         opacity: 0;
     }
+
     60% {
         opacity: 50%;
     }
+
     100% {
         opacity: 1;
     }
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    column-gap: 10rem;
+    position: relative;
+    bottom: -10rem;
+}
+
+.controls a {
+    font-size: 3rem;
+    color: var(--gray);
+    cursor: pointer;
+    border: 0.1rem solid var(--light-gray);
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+}
+
+.controls a:hover {
+    background-color: var(--light-gray);
+    color: var(--white);
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.progress {
+    width: 10rem;
+    height: 3rem;
+    border: 0.2rem solid var(--light-gray);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    align-items: center;
+    column-gap: 0.5rem;
+    position: relative;
+}
+
+.progress span {
+    font-weight:  600;
+    z-index: 1;
+}
+
+.progress div {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #acacac;
+    border-radius: 2rem;
 }

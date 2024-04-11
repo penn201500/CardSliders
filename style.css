@@ -101,7 +101,7 @@ html {
 }
 
 .fade-in {
-    animation: firstSlideAnimation 0.5s;
+    animation: firstSlideAnimation 0.2s;
 }
 
 @keyframes firstSlideAnimation {

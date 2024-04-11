@@ -6,8 +6,6 @@ let timeout;
 let progressInterval;
 
 progress.children[1].textContent = `- ${slider.children.length}`;
-
-console.log("🚀 ~ progress.children[1].textContent:\n\n", progress.children[1].textContent);
 const autoSlide = () => {
   interval = setInterval(() => {
     rightMove(false);

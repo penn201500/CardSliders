@@ -122,6 +122,7 @@ function cardValueToNum(v) {
 const elements = {
   slider,
   sliders: [...slider.children],
+  progress: document.querySelector(".progress"),
 };
 
 export default elements;

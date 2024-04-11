@@ -154,6 +154,7 @@ html {
     align-items: center;
     column-gap: 0.5rem;
     position: relative;
+    overflow: hidden;
 }
 
 .progress span {
@@ -164,8 +165,10 @@ html {
 .progress div {
     position: absolute;
     left: 0;
-    width: 100%;
+    width: 0%;
     height: 100%;
-    background-color: #acacac;
+    /* background-color: #acacac; */
+    background-color: lightgreen;
     border-radius: 2rem;
+    transition: width 1s linear;
 }

@@ -1,41 +1,57 @@
 import elements from "./sliders.js";
 
-const { slider, sliders } = elements;
+const { slider, sliders, progress } = elements;
 let interval;
 let timeout;
+let progressInterval;
 
 const autoSlide = () => {
   interval = setInterval(() => {
     rightMove(false);
-  }, 3000);
+  }, 5000);
 };
 
 autoSlide();
 
-const stopAutoSlide = (bool) => {
-  if (bool) {
+const stopAutoSlide = (boolVal) => {
+  if (boolVal) {
     clearInterval(interval);
     clearTimeout(timeout);
+    clearInterval(progressInterval);
+    progressBar(10);
     timeout = setTimeout(() => {
       autoSlide();
     }, 5000);
   }
 };
 
-const rightMove = (bool = true) => {
+const progressBar = (percent) => {
+  let i = 10;
+  progressInterval = setInterval(() => {
+    progress.lastElementChild.style.width = `${(i += percent)}%`;
+    console.log(`Here is the progress: ${i}`);
+    if (i === 110) {
+      i = 0;
+      clearInterval(progressInterval);
+      progress.lastElementChild.style.width = i;
+    }
+  }, 1000);
+}
+
+const rightMove = (boolVal = true) => {
   const firstSlide = slider.removeChild(slider.firstElementChild);
   slider.append(firstSlide);
   slider.children[4].classList.add("fade-in");
   slider.style.justifyContent = "flex-end";
-  stopAutoSlide(bool);
+  stopAutoSlide(boolVal);
 };
 
-const leftMove = (bool = true) => {
+const leftMove = (boolVal = true) => {
   const lastSlide = slider.removeChild(slider.lastElementChild);
   slider.insertBefore(lastSlide, slider.firstElementChild);
   slider.children[0].classList.add("fade-in");
   slider.style.justifyContent = "flex-start";
-  stopAutoSlide(bool);
+  stopAutoSlide(boolVal);
 };
 
 sliders.forEach((slide) => {

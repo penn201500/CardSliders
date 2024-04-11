@@ -85,3 +85,9 @@ sliders.forEach((slide) => {
     }
   });
 });
+
+const leftControl = document.querySelector(".left-control");
+leftControl.addEventListener("click", leftMove);
+
+const rightControl = document.querySelector(".right-control");
+rightControl.addEventListener("click", rightMove);

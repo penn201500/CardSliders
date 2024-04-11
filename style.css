@@ -99,3 +99,20 @@ html {
     color: var(--gray);
     font-size: 1.5rem;
 }
+
+.fade-in {
+    animation: firstSlideAnimation 0.5s;
+}
+
+@keyframes firstSlideAnimation {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    60% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 1;
+    }
+}

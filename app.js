@@ -5,11 +5,15 @@ const { slider, sliders } = elements;
 const rightMove = () => {
   const firstSlide = slider.removeChild(slider.firstElementChild);
   slider.append(firstSlide);
+  slider.children[4].classList.add("fade-in");
+  slider.style.justifyContent = "flex-end";
 };
 
 const leftMove = () => {
   const lastSlide = slider.removeChild(slider.lastElementChild);
   slider.insertBefore(lastSlide, slider.firstElementChild);
+  slider.children[0].classList.add("fade-in");
+  slider.style.justifyContent = "flex-start";
 };
 
 

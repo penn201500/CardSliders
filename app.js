@@ -25,7 +25,9 @@ sliders.forEach((slide) => {
       switch (slideIndex) {
         case 0:
           leftMove();
-          leftMove();
+          setTimeout(function() {
+            leftMove();
+          }, 500);
           break;
         case 1:
           leftMove();
@@ -35,7 +37,9 @@ sliders.forEach((slide) => {
           break;
         case 4:
           rightMove();
-          rightMove();
+          setTimeout(function() {
+            rightMove();
+          }, 500);
           break;
         default:
           break;

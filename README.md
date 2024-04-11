@@ -13,4 +13,4 @@ This is an interesting auto-slider example. Thanks to [video](https://www.youtub
 
 ## Screenshot
 
-![Screenshot](https://easyimage.netmark.top/i/2024/04/11/230829.gif)
+![Screenshot](https://easyimage.netmark.top/i/2024/04/11/232628.gif)

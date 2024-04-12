@@ -13,6 +13,6 @@ This is an interesting auto-slider example. Thanks to [video](https://www.youtub
 
 ## Screenshot
 
-![autoScroll](https://easyimage.netmark.top/i/2024/04/11/233136.gif)
+![autoScroll](https://github.com/penn201500/sliders/blob/main/images/slider-autoScroll.gif)
 
-![clicking](https://easyimage.netmark.top/i/2024/04/11/233213.gif)
+![clicking](https://github.com/penn201500/sliders/blob/main/images/slider-clicking.png)

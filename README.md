@@ -15,4 +15,4 @@ This is an interesting auto-slider example. Thanks to [video](https://www.youtub
 
 ![autoScroll](https://github.com/penn201500/sliders/blob/main/images/slider-autoScroll.gif)
 
-![clicking](https://github.com/penn201500/sliders/blob/main/images/slider-clicking.png)
+![clicking](https://github.com/penn201500/sliders/blob/main/images/slider-clicking.gif)
